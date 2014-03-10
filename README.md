@@ -45,3 +45,5 @@ For example:  [ `backbone-routing-demo.meteor.com/mmotel@test` ](http://backbone
 When tehre is `selectedCategory` in url bar address is set into `/userName/category_id`. 
 
 For example:  [ `backbone-routing-demo.meteor.com/mmotel@test/txjYRcKAQrwMbenbZ ` ](http://backbone-routing-demo.meteor.com/mmotel@test/txjYRcKAQrwMbenbZ) .
+
+Routing is bidirectional what we can see when we click on links above.
