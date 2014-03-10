@@ -2,7 +2,7 @@
 
 ### Live demo
 
-Go and see live demo at backbone-routing-demo.meteor.com.
+Go and see live demo at [backbone-routing-demo.meteor.com](http://backbone-routing-demo.meteor.com).
 
 ### Meteor & [Atmosphere](https://atmosphere.meteor.com/) packages management
 
@@ -38,6 +38,8 @@ meteor
 
 ## Routing
 
-When there is `selectedUser` in url bar address is set into `/userName`.
+When there is `selectedUser` in url bar address is set into `/userName`. 
+For example: ` [backbone-routing-demo.meteor.com/mmotel@test](http://backbone-routing-demo.meteor.com/mmotel@test) ` .
 
 When tehre is `selectedCategory` in url bar address is set into `/userName/category_id`. 
+For example: ` [backbone-routing-demo.meteor.com/mmotel@test/txjYRcKAQrwMbenbZ](http://backbone-routing-demo.meteor.com/mmotel@test/txjYRcKAQrwMbenbZ) ` .
