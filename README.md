@@ -39,7 +39,7 @@ meteor
 ## Routing
 
 When there is `selectedUser` in url bar address is set into `/userName`. 
-For example: ` [backbone-routing-demo.meteor.com/mmotel@test](http://backbone-routing-demo.meteor.com/mmotel@test) ` .
+For example:  [ `backbone-routing-demo.meteor.com/mmotel@test` ](http://backbone-routing-demo.meteor.com/mmotel@test) .
 
-When tehre is `selectedCategory` in url bar address is set into `/userName/category_id`. 
-For example: ` [backbone-routing-demo.meteor.com/mmotel@test/txjYRcKAQrwMbenbZ](http://backbone-routing-demo.meteor.com/mmotel@test/txjYRcKAQrwMbenbZ) ` .
+When tehre is selectedCategory` in url bar address is set into `/userName/category_id`. 
+For example:  [ `backbone-routing-demo.meteor.com/mmotel@test/txjYRcKAQrwMbenbZ `](http://backbone-routing-demo.meteor.com/mmotel@test/txjYRcKAQrwMbenbZ) .
