@@ -1,0 +1,124 @@
+<head>
+  <title>bb-routing-demo</title>
+</head>
+
+<body>
+
+{{>addCategoryModal}}
+{{>detailsCategoryModal}}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+
+        <div class="well">
+          {{loginButtons}}
+        </div>
+
+        {{>users}}
+      </div>
+      <div class="col-lg-8">
+        {{>categories}}
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<template name="users">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Użytkownicy</div>
+
+    <!-- Table -->
+    <table class="table">
+      {{#each users}}
+        {{>user}}
+      {{/each}}
+    </table>
+  </div>
+</template>
+
+<template name="user">
+  <tr>
+    <td><button class="btn btn-link">{{name}}</button></td>
+  </tr>
+</template>
+
+<template name="categories">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Kategorie 
+      {{#if currentUser}}
+      <button type="button" id="addCategoryBtn" class="btn btn-default btn-xs pull-right">+</button>
+      {{/if}}
+    </div>
+
+    <!-- Table -->
+    <table class="table">
+    {{#each categories}}
+      {{>category}}
+    {{/each}} 
+    </table>
+  </div>
+</template>
+
+<template name="category">
+  <tr>
+    <td><button class="btn btn-link">{{name}}</button></td>
+  </tr>
+</template>
+
+<template name="addCategoryModal">
+{{#if show}}
+  <div class="mask"></div>
+  <div class="modal" id="addCategoryModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close exit" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Dodaj kategorię</h4>
+        </div>
+        <div class="modal-body">
+          
+          <div class="input-group">
+            <span class="input-group-addon">Nazwa:</span>
+            <input type="text" id="addCategoryName" class="form-control" placeholder="Nowa kategoria">
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default exit">Anuluj</button>
+          <button type="button" class="btn btn-primary save">Dodaj</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+{{/if}}
+</template>
+
+<template name="detailsCategoryModal">
+{{#if show}}
+  <div class="mask"></div>
+  <div class="modal" id="detailsCategoryModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close exit" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Kategoria</h4>
+        </div>
+        <div class="modal-body">
+          
+          <h1>{{category.name}}</h1>
+          <h3>{{category.owner}}</h3>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default exit">Anuluj</button>
+          <!-- <button type="button" class="btn btn-primary save">Dodaj</button> -->
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+{{/if}}
+</template>
