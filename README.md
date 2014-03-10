@@ -1,6 +1,10 @@
 # MeteorJS & Backbone: Routing Demo
 
-### Meteor & Atmosphere packages management
+### Live demo
+
+Go and see live demo at backbone-routing-demo.meteor.com.
+
+### Meteor & [Atmosphere](https://atmosphere.meteor.com/) packages management
 
 ```sh
 meteor add jquery
