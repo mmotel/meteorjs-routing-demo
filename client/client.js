@@ -9,14 +9,7 @@ Meteor.subscribe("categories");
 // });
 
 Template.users.users = function (){
-  // var users = 
   return Meteor.users.find().fetch();
-
-  // for(var i =0; i < users.length; i++){
-  //   users[i].name = users[i].emails[0].address;
-  // }
-
-  // return users;
 }
 
 Template.user.events({
@@ -76,27 +69,8 @@ Template.detailsCategoryModal.events({
   'click .exit': function (){
     Session.set('showDetailsCategoryModal', false);
     Router.setUser(Session.get("selectedUser"));
-  }//,
-  // 'click .save': function (event, template){
-  //   var name = template.find("#addCategoryName").value;
-  //   if(name.length > 0){
-  //     Categories.insert({ name: name, owner: Meteor.user().name });
-  //     Session.set('showAddCategoryModal', false);
-  //   }
-  // }
+  }
 });
-
-// Template.hello.greeting = function () {
-//   return "Welcome to bb-routing-demo.";
-// };
-
-// Template.hello.events({
-//   'click input': function () {
-//     // template data, if any, is available in 'this'
-//     if (typeof console !== 'undefined')
-//       console.log("You pressed the button");
-//   }
-// });
 
 //---! ROUTING !---
 
