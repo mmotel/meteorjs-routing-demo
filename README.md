@@ -4,6 +4,20 @@
 
 Go and see live demo at [backbone-routing-demo.meteor.com](http://backbone-routing-demo.meteor.com).
 
+### Dependencies
+
+You need `meteorite` to use [Atmosphere Smart Packages](https://atmosphere.meteor.com/).
+
+```sh
+npm install -g meteorite
+```
+
+or
+
+```
+sudo -H npm install -g meteorite
+```
+
 ### Meteor & [Atmosphere](https://atmosphere.meteor.com/) packages management
 
 ```sh
